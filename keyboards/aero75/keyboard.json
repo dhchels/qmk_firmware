@@ -11,8 +11,8 @@
         "nkro": true
     },
     "matrix_pins": {
-        "cols": ["C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2", "C2"],
-        "rows": ["D1", "D1", "D1", "D1", "D1", "D1"]
+        "cols": ["PB3", "PA7", "PB0", "PB1", "PB2", "PB10", "PB11", "PB12", "PB13", "PB14", "PB15", "PA8", "PA9", "PA10", "PA4", "PA3"],
+        "rows": ["PA15", "PA2", "PA1", "PA0", "PB4", "PB5"]
     },
     "processor": "STM32F072",
     "url": "",
