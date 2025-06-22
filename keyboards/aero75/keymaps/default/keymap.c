@@ -13,3 +13,26 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_MUTE,    KC_LCTL, KC_LGUI, KC_LALT,                            KC_SPC,                             KC_RALT,          KC_RCTL, KC_LEFT, KC_DOWN, KC_RGHT
     )
 };
+
+#ifdef OLED_ENABLE
+
+// Define OLED display properties
+#define OLED_DISPLAY_WIDTH 128
+#define OLED_DISPLAY_HEIGHT 32
+
+oled_rotation_t oled_init_user(oled_rotation_t rotation) {
+  // Set OLED rotation
+  // Available options: OLED_ROTATION_0, OLED_ROTATION_90, OLED_ROTATION_180, OLED_ROTATION_270
+  return OLED_ROTATION_270;
+}
+
+void oled_task_user(void) {
+  // Clear the display
+  oled_clear();
+
+  // Set font and write "Hello World!"
+  // oled_set_font(font_5x7); // Example: Use a specific font if available
+  oled_write_P(PSTR("Hello World!"), false);
+}
+
+#endif
