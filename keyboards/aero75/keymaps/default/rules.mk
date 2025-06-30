@@ -1,5 +1,5 @@
 # OLED display support
-OLED_ENABLE = yes
-OLED_DRIVER = ssd1306
+OLED_DRIVER_ENABLE = yes
 OLED_TRANSPORT = i2c
 ENCODER_ENABLE = yes
+WPM_ENABLE = yes
